@@ -1,0 +1,119 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+main
+{
+    height:auto;
+    width:100%;
+    background-color: #234212;
+}
+main .container
+{
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-auto-columns:200px;
+    grid-auto-flow: column;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+    padding: 30px 0;
+    place-items: start;
+    border: 1px solid #000;
+}
+main .container div
+{
+    border: 2px solid #000;
+    font-size: 20px;
+    background-color: rgb(86, 224, 5);
+    font-size: 6rem;
+    font-weight: 900;
+    color: #fff;
+}
+main .container div:nth-child(2)
+{
+    place-self: center;
+}
+.container2
+{
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px; 
+    background-color: #df3;
+    padding: 30px 0;
+    gap:1rem;
+    align-content: center;
+    justify-content: center;
+}
+.item
+{ 
+    border: 2px solid #000;
+    font-size: 20px;
+    background-color: rgb(86, 224, 5);
+    font-size: 6rem;
+    font-weight: 900;
+    color: #fff;
+    display:grid;
+    align-content: end;
+    justify-content: end;
+}
+.container2 .item span
+{
+    border: 1px solid #000;
+    background-color:#234212;
+}
+.container3
+{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    place-content: center;
+    grid-template-areas: 
+    "a b b"
+    "c c d"
+    "e f g"
+    ;
+    gap:5px;
+    padding: 30px 0;
+}
+.container3 div:nth-child(1)
+{
+    grid-area: a;
+    background-color: red;
+}
+.container3 div:nth-child(2)
+{
+    grid-area: b;
+    background-color: blue;
+}
+.container3 div:nth-child(3)
+{
+    grid-area: c;
+    background-color:yellow;
+}
+.container3 div:nth-child(4)
+{
+    grid-area: d;
+    background-color: red;
+}
+.container3 div:nth-child(5)
+{
+    grid-area: e;
+    background-color: red;
+}
+.container3 div:nth-child(6)
+{
+    grid-area: f;
+    background-color: blue;
+}
+.container3 div:nth-child(7)
+{
+    grid-area: g;
+    background-color:yellow;
+}
